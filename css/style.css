@@ -1,6 +1,6 @@
 :root {
-  --primary: #0bf3ad;
-  --bg: #045255;
+  --primary: #f30b3e;
+  --bg: #010101;
 }
 
 *{
@@ -92,7 +92,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('img/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,8 +113,67 @@ body {
   max-width: 60rem;
 }
 
+section .header{
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card{
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover{
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span{
+  display: inline-block;
+  background-color: #f30b3e;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4{
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.features .card p{
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card a{
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+  color: #f30b3e;
+}
+
 .hero .content h1 {
-  font-size: 5em;
+  font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
@@ -158,7 +217,7 @@ body {
 .menu h2,
 .contact h2 {
   text-align: center;
-  color: #fcf9f9;
+  color: #f30b3e;
   font-size: 2.6rem;
   margin-bottom: 8rem;
 }
@@ -173,7 +232,7 @@ body {
 
 .about .row .about-img img {
   width: 60%;
-  height: 50;
+  margin-top: 1rem;
 }
 
 .about .row .content {
@@ -182,17 +241,17 @@ body {
 }
 
 .about .row .content h3 {
-  margin-left: -19rem;
+  margin-left: -5rem;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #faf9f9;
+  color: #f30b3e;
 }
 
 .about .row .content p {
-  margin-left: -19rem;
+  margin-left: -5rem;
   margin-bottom: 0.8rem;
   font-size: 1.6rem;
-  font-weight: 75;
+  font-weight: 100;
   line-height: 1.5;
   color: #fff;
 }
@@ -223,15 +282,15 @@ body {
 .menu .row .menu-card {
   text-align: center;
   padding: 1rem;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: black;
 }
 
 .menu .row .menu-card img {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%
+  border-radius: 20%;
+  width: 20%;
+  height: 20%
   margin: 0;
 }
 
@@ -239,8 +298,8 @@ body {
   position: different;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   color: var(--primary);
   background-color: #white;
   opacity: 0.8;
@@ -260,6 +319,8 @@ body {
   justify-content: left;
   display: flex ; 
 }
+
+/* IcikiwiRRRRRRRRRRRRr */
 .contact .row .contact-icon a {
   color: var(--primary);
   display: inline-block;
